@@ -15,7 +15,3 @@ body {
   margin: 0;
   font-size: 50px;
 }
-canvas {
-  position: absolute;
-  top: 50%;
-}
