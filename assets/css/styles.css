@@ -1,0 +1,21 @@
+
+body {
+  font-family: 'Amatic SC', cursive;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 50px;
+}
+canvas {
+  position: absolute;
+  top: 50%;
+}
