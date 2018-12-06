@@ -1,6 +1,8 @@
 
 body {
   font-family: 'Amatic SC', cursive;
+  position: relative;
+  margin: 0;
 }
 
 .title {
@@ -8,10 +10,131 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .title h1 {
   margin: 0;
   font-size: 50px;
+}
+
+#sphere {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 60px;
+  position: absolute;
+  top: 25%;
+  right: 1%;
+}
+
+.info-player {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-image: url('./../images/jurassic.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.info-player .container {
+  background-color: #f0ffffb8;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-player .container h1 {
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.info-player .container button {
+  outline: 0;
+  margin-top: 20px;
+  border: 0;
+  background-color: #35544e;
+  border: 2px solid #ffffff66;
+  color: white;
+  padding: 20px;
+  width: 180px;
+  border-radius: 4px;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.info-player .container button.active {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.info-player input {
+  padding: 10px;
+  font-size: 22px;
+  outline: 0;
+  text-align: center;
+}
+
+#score-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  background-color: #4caf501f;
+  border: 1px solid gainsboro;
+  padding: 10px 40px;
+  margin-top: 10px;
+  display: none;
+}
+
+#score-container.on {
+  display: block;
+}
+
+#score-container ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+
+#score-container ul li {
+  margin-right: 30px;
+}
+
+#score-container ul li:last-child {
+  margin-right: 0;
+}
+
+#score-container h3 {
+  margin: 20px 0 10px 0;
+  text-align: center;
+}
+
+#restart {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  display: none;
+}
+
+#restart.show {
+  display: block;
+}
+
+.btn {
+  border: 0;
+  outline: none;
 }

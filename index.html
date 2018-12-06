@@ -7,9 +7,16 @@
     <link href="./css/styles.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
     <script src="./js/constanst.js"></script>
     <script src="./js/models/background.js"></script>
+    <script src="./js/models/chronometer.js"></script>
     <script src="./js/models/clouds.js"></script>
+    <script src="./js/models/birds.js"></script>
     <script src="./js/models/rex.js"></script>
     <script src="./js/models/cactus.js"></script>
     <script src="./js/models/game.js"></script>
@@ -18,8 +25,29 @@
   <body>
     <div class="title">
       <h1>Runner T-Rex canallita</h1>
-      <h2>Press Space key to start and jump</h2>
     </div>
-    <canvas id="game-board" width="1200" height="400"></canvas>
+      <div id="sphere">
+        <span id="secDec" class="number">0</span>
+        <span id="secUni" class="number">0</span>
+      </div>
+      <div class="info-player">
+        <div class="container">
+          <h1>PARA COMENZAR A JUGAR</h1>
+          <h1>escribe tu nombre</h1>
+          <input id="name" type="text">
+          <button id="play">JUGAR</button>
+        </div>
+      </div>
+      <div id="score-container">
+        <h3>TU PUNTUACIÓN</h3>
+        <ul>
+          <li>Nombre: <span id="name-score"></span></li>
+          <li>Tiempo: <span id="time-score"></span></li>
+        </ul>
+      </div>
+      <div id="restart">
+        <img src="./images/2x-restart.png" alt="">
+      </div>
+    <canvas id="game-board" width="900" height="400"></canvas>
   </body>
 </html>

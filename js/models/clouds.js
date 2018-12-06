@@ -3,9 +3,9 @@ function Clouds(ctx) {
 
   this.w = 60;
   this.h = 30;
-  
+
   this.x = this.ctx.canvas.width;
-  this.y = 230;
+  this.y = Math.floor(Math.random() * 230) + 50;
 
   this.img = new Image();
   this.img.src = "./images/2x-cloud.png";

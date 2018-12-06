@@ -8,7 +8,7 @@ function Cactus(ctx) {
   this.y = 300;
   
   this.img = new Image();
-  this.img.src = "./images/2x-obstacle-small.png";
+  this.img.src = "./images/2x-obstacle-large.png";
 
   this.img.frames = 3;
   this.img.frameIndex = 0;
